@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_header"
+        android:background="@color/colorDark"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:contentDescription="Blabla"
+        >
+
+        <TextView android:id="@+id/text_view_title"
+            android:text="Nouveau Parcours"
+            android:textSize="25sp"
+            android:textColor="@color/colorGold"
+            android:drawableStart="@drawable/previous_arrow"
+            android:drawablePadding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_alignParentStart="true"
+            />
+
+        <TextView android:id="@+id/text_view_live"
+            android:text="Live"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorRed"
+            android:drawableStart="@drawable/circle"
+            android:drawablePadding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="25dp"
+            android:layout_alignParentBottom="true"
+            />
+
+        <ImageView
+            android:src="@drawable/logo"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="Blabla"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative_layout_header"
+        android:contentDescription="Blabla"
+        >
+
+        <Button
+            android:id="@+id/button_collision"
+            android:text="1 collision"
+            android:textColor="#FFF"
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <View
+            android:id="@+id/separator_001"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorWhite"
+            android:layout_below="@id/button_collision"
+            />
+
+        <Button
+            android:id="@+id/button_speed"
+            android:text="300 km / h"
+            android:textColor="#FFF"
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/separator_001"
+            />
+
+        <View
+            android:id="@+id/separator_002"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorWhite"
+            android:layout_below="@id/button_speed"
+            />
+
+        <Button
+            android:id="@+id/button_time"
+            android:text="3 : 20"
+            android:textColor="#FFF"
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/separator_002"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/relative_layout_rest"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relative_layout_content"
+        android:contentDescription="Blabla">
+
+        <fragment xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map_view"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            tools:context=".ui.session.LiveActivity"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:background="@color/colorDark"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <Button
+            android:id="@+id/button_launch_stop"
+            android:text="Démarrer"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

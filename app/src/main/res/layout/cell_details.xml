@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <TableLayout
+        android:stretchColumns="1"
+        android:orientation="horizontal"
+        android:background="@color/colorDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/text_view_time"
+                android:text="time"
+                android:textSize="14sp"
+                android:textColor="@color/colorWhite"
+                android:paddingVertical="15dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:id="@+id/text_view_location"
+                android:text="location"
+                android:textSize="14sp"
+                android:textColor="@color/colorWhite"
+                android:paddingVertical="15dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:id="@+id/text_view_speed"
+                android:text="speed"
+                android:textSize="14sp"
+                android:textColor="@color/colorWhite"
+                android:paddingVertical="15dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:id="@+id/text_view_collision"
+                android:text="collision"
+                android:textSize="14sp"
+                android:textColor="@color/colorWhite"
+                android:paddingVertical="15dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                />
+        </TableRow>
+
+    </TableLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorWhite"/>
+
+</androidx.cardview.widget.CardView>

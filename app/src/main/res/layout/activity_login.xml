@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/colorDark"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="100dp"
+        android:src="@drawable/logo_text"
+        android:layout_gravity="center"
+        android:contentDescription="Blabla"
+        />
+uu
+    <TextView android:id="@+id/fstTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:textColor="@color/colorWhite"
+        android:text="Pseudo"
+        />
+
+    <EditText android:id="@+id/edit_text_pseudo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:textColor="@color/colorWhite"
+        android:ems="10"
+        />
+
+    <TextView android:id="@+id/secTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mot de passe"
+        android:textColor="@color/colorWhite"
+        android:layout_marginLeft="100dp"
+        />
+
+    <EditText android:id="@+id/edit_text_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:inputType="textPassword"
+        android:textColor="@color/colorWhite"
+        android:ems="10"
+        />
+
+    <Button android:id="@+id/button_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorAccent"
+        android:paddingHorizontal="20dp"
+        android:text="Connexion"
+        />
+
+    <ProgressBar android:id="@+id/progress_bar_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"
+        />
+
+    <TextView android:id="@+id/text_view_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="30dp"
+        android:text="Nouveau sur Anti-Crash-Zone ? Inscris-toi dès maintenant !"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/colorGold"
+        />
+
+</LinearLayout>
